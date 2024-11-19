@@ -1,0 +1,106 @@
+.parking-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .floor-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .slot {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .slot.available {
+    background-color: #21de21; /* Green for available slots */
+  }
+  
+  .slot.booked {
+    background-color: #ed4444; /* Red for booked slots */
+    cursor: not-allowed;
+  }
+  
+  .slot.selected {
+    border: 2px solid #000;
+    background-color: #1c7ff0; /* Blue for selected slot */
+  }
+  
+  .slot:hover:not(.booked) {
+    background-color: #3196ed; /* Hover effect for available slots */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #d94444;
+  }
+  
+  .styled-table th, 
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table th:nth-child(1), .styled-table td:nth-child(1) {
+  width: 20%;
+}
+
+.styled-table th:nth-child(2), .styled-table td:nth-child(2) {
+  width: 20%;
+}
+
+.styled-table th:nth-child(3), .styled-table td:nth-child(3) {
+  width: 20%;
+}
+
+.styled-table th:nth-child(4), .styled-table td:nth-child(4) {
+  width: 20%;
+}
+
+.styled-table th:nth-child(5), .styled-table td:nth-child(5) {
+  width: 10%;
+}
+
+.styled-table th:nth-child(6), .styled-table td:nth-child(6) {
+  width: 10%;
+}
+.timer {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .extend-options {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .extend-options button {
+    margin: 5px;
+  }
+  
